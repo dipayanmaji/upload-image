@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <script src="./script.js" defer></script>
+    <style>
+        img {
+            width: 10rem;
+            margin: 4px;
+            border: 2px solid #03a9f4;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="file" name="image" onchange="imageHandler(event)" />
+        <input type="reset" onclick="resetHandler()">
+        <br>
+        <br>
+        <div id="container"></div>
+    </form>
+</body>
+
+</html>
